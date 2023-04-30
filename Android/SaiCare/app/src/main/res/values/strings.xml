@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">SAI Scan</string>
+    <string name="home_info">We Provide health care services for various disease. World class instruments and highly professional doctors are available. Book your appointment and visit us. Patient satisfactory services are guranteed.</string>
+    <string name="gall_info">In Jamshedpur,Sai Scan and Diagonistics Center is a recognized name in patient care. It was incepted in the year 1991. We are one of the well-known Diagnostic Centres in Sakchi. Backed with a vision to offer the best in patient care and equipped with technologically advanced healthcare facilities</string>
+    <string name="title_activity_main">MainActivity</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

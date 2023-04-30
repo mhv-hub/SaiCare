@@ -1,0 +1,30 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="15dp"
+    android:gravity="center"
+    tools:context="com.sai.app.saicare.AboutUsFragment">
+
+    <ImageView
+        android:id="@+id/img1"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/logo"
+        />
+    <TextView
+        android:layout_marginTop="20dp"
+        android:id="@+id/txt18"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/img1"
+        android:textStyle="italic"
+        android:gravity="center"
+        android:textColor="@color/dark"
+        android:text="In Jamshedpur,Sai Scan and Diagonistics Center is a recognized name in patient care. It was incepted in the year 1991. They are one of the well-known Diagnostic Centres in Sakchi. Backed with a vision to offer the best in patient care and equipped with technologically advanced healthcare facilities, they are one of the upcoming names in the healthcare industry. Located in , this diagonostic is easily accessible by various means of transport. A team of well-trained medical staff, non-medical staff and experienced clinical technicians work round-the-clock to offer various services . Their professional services make them a sought after Diagnostic Centres in Jamshedpur. A team of doctors on board, including specialists are equipped with the knowledge and expertise for handling various types of medical cases."
+        />
+
+</RelativeLayout>

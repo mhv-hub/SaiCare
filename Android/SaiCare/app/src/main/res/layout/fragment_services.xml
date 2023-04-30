@@ -1,0 +1,495 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/light"
+    tools:context="com.sai.app.saicare.ServicesFragment">
+
+
+    <ScrollView
+        android:scrollbars="none"
+        android:overScrollMode="never"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:padding="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:layout_marginTop="10dp"
+                android:id="@+id/img"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:background="@drawable/circleoutline"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true" />
+
+            <ImageView
+                android:layout_marginTop="25dp"
+                android:id="@+id/imgt"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true" />
+
+            <TextView
+                android:id="@+id/txt"
+                android:layout_marginTop="10dp"
+                android:textSize="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/img"
+                android:text="MRI"
+                android:textStyle="bold"
+                android:textColor="@color/dark"
+                android:gravity="center"
+                />
+            <TextView
+                android:layout_marginTop="10dp"
+                android:id="@+id/txt1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/txt"
+                android:gravity="center"
+                android:text="Magnetic resonance imaging (MRI) is a noninvasive medical test that physicians use to diagnose medical conditions. MRI uses a powerful magnetic field, radio frequency pulses and a computer to produce detailed pictures of organs, soft tissues, bone and virtually all other internal body structures."
+                android:textStyle="italic"
+                android:textColor="@color/dark"
+                />
+            <ImageView
+                android:layout_marginTop="20dp"
+                android:id="@+id/img1"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_below="@+id/txt1"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/circleoutline"
+                />
+
+            <ImageView
+                android:layout_below="@+id/txt1"
+                android:layout_marginTop="35dp"
+                android:id="@+id/imgt1"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_centerHorizontal="true" />
+
+            <TextView
+                android:layout_marginTop="10dp"
+                android:textSize="20dp"
+                android:id="@+id/txt2"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_below="@+id/img1"
+                android:text="ULTRASOUND"
+                android:textStyle="bold"
+                android:textColor="@color/dark"
+                android:gravity="center"
+                />
+            <TextView
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:id="@+id/txt3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txt2"
+                android:text="Medical ultrasound is a diagnostic imaging technique based on the application of ultrasound. It is used to see internal body structures such as tendons, muscles, joints, blood vessels and internal organs."
+                android:textStyle="italic"
+                android:textColor="@color/dark"
+                />
+            <ImageView
+                android:layout_marginTop="20dp"
+                android:id="@+id/img2"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_below="@+id/txt3"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/circleoutline"
+                />
+
+            <ImageView
+                android:layout_below="@+id/txt3"
+                android:layout_marginTop="35dp"
+                android:id="@+id/imgt2"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_centerHorizontal="true" />
+
+            <TextView
+                android:layout_marginTop="10dp"
+                android:textSize="20dp"
+                android:id="@+id/txt4"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_below="@+id/img2"
+                android:text="3D/4D SONOGRAPHY"
+                android:textStyle="bold"
+                android:textColor="@color/dark"
+                android:gravity="center"
+                />
+            <TextView
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:id="@+id/txt5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txt4"
+                android:text="3D/4D scanning the fetus can now be seen to yawn, cry, swallow, blink and perform intricate finger movements.This is the recent and most effective technology which is also provided by us"
+                android:textStyle="italic"
+                android:textColor="@color/dark"
+                />
+            <ImageView
+                android:layout_marginTop="20dp"
+                android:id="@+id/img3"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_below="@+id/txt5"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/circleoutline"
+                />
+
+            <ImageView
+                android:layout_below="@+id/txt5"
+                android:layout_marginTop="35dp"
+                android:id="@+id/imgt3"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_centerHorizontal="true" />
+
+
+            <TextView
+                android:layout_marginTop="10dp"
+                android:textSize="20dp"
+                android:id="@+id/txt6"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_below="@+id/img3"
+                android:text="Vascular Sonography"
+                android:textStyle="bold"
+                android:textColor="@color/dark"
+                android:gravity="center"
+                />
+            <TextView
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:id="@+id/txt7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txt6"
+                android:text="A vascular sonographer is a medical imaging specialist who examines blood vessels using ultrasound equipment."
+                android:textStyle="italic"
+                android:textColor="@color/dark"
+                />
+            <ImageView
+                android:layout_marginTop="20dp"
+                android:id="@+id/img5"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_below="@+id/txt7"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/circleoutline"
+                />
+            <ImageView
+                android:layout_below="@+id/txt7"
+                android:layout_marginTop="35dp"
+                android:id="@+id/imgt4"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_centerHorizontal="true" />
+
+
+            <TextView
+                android:layout_marginTop="10dp"
+                android:textSize="20dp"
+                android:id="@+id/txt8"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_below="@+id/img5"
+                android:text="ECG"
+                android:textStyle="bold"
+                android:textColor="@color/dark"
+                android:gravity="center"
+                />
+            <TextView
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:id="@+id/txt9"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txt8"
+                android:text="Electrocardiography is the process of recording the electrical activity of the heart over a period of time using electrodes placed on the skin.Sai Scan provides the patient with such kind of facilities."
+                android:textStyle="italic"
+                android:textColor="@color/dark"
+                />
+            <ImageView
+                android:layout_marginTop="20dp"
+                android:id="@+id/img6"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_below="@+id/txt9"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/circleoutline"
+                />
+
+            <ImageView
+                android:layout_below="@+id/txt9"
+                android:layout_marginTop="35dp"
+                android:id="@+id/imgt5"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_centerHorizontal="true" />
+
+
+            <TextView
+                android:layout_marginTop="10dp"
+                android:textSize="20dp"
+                android:id="@+id/txt10"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_below="@+id/img6"
+                android:text="Digital X Ray"
+                android:textStyle="bold"
+                android:textColor="@color/dark"
+                android:gravity="center"
+                />
+            <TextView
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:id="@+id/txt11"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txt10"
+                android:text="Digital radiography is a form of X-ray imaging, where digital X-ray sensors are used instead of traditional photographic film.This latest technology is also provided to the patient for a better treatment."
+                android:textStyle="italic"
+                android:textColor="@color/dark"
+                />
+            <ImageView
+                android:layout_marginTop="20dp"
+                android:id="@+id/img7"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_below="@+id/txt11"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/circleoutline"
+                />
+
+            <ImageView
+                android:layout_below="@+id/txt11"
+                android:layout_marginTop="35dp"
+                android:id="@+id/imgt6"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_centerHorizontal="true" />
+
+
+            <TextView
+                android:layout_marginTop="10dp"
+                android:textSize="20dp"
+                android:id="@+id/txt12"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_below="@+id/img7"
+                android:text="Pulmonary Function Testing"
+                android:textStyle="bold"
+                android:textColor="@color/dark"
+                android:gravity="center"
+                />
+            <TextView
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:id="@+id/txt13"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txt12"
+                android:text="Pulmonary function testing (PFT) is a complete evaluation of the respiratory system including patient history, physical examinations, chest x-ray examinations, arterial blood gas analysis, and tests of pulmonary function."
+                android:textStyle="italic"
+                android:textColor="@color/dark"
+                />
+            <ImageView
+                android:layout_marginTop="20dp"
+                android:id="@+id/img8"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_below="@+id/txt13"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/circleoutline"
+                />
+
+            <ImageView
+                android:layout_below="@+id/txt13"
+                android:layout_marginTop="35dp"
+                android:id="@+id/imgt7"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_centerHorizontal="true" />
+
+
+            <TextView
+                android:layout_marginTop="10dp"
+                android:textSize="20dp"
+                android:id="@+id/txt14"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_below="@+id/img8"
+                android:text="Pathology Labs"
+                android:textStyle="bold"
+                android:textColor="@color/dark"
+                android:gravity="center"
+                />
+            <TextView
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:id="@+id/txt15"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txt14"
+                android:text="Clinical pathology is a medical specialty that is concerned with the diagnosis of disease based on the laboratory analysis of bodily fluids such as blood and urine, as well as tissues, using the tools of chemistry, clinical microbiology, hematology and molecular pathology."
+                android:textStyle="italic"
+                android:textColor="@color/dark"
+                />
+            <ImageView
+                android:layout_marginTop="20dp"
+                android:id="@+id/img9"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_below="@+id/txt15"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/circleoutline"
+                />
+
+            <ImageView
+                android:layout_below="@+id/txt15"
+                android:layout_marginTop="35dp"
+                android:id="@+id/imgt8"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_centerHorizontal="true" />
+
+            <TextView
+                android:layout_marginTop="10dp"
+                android:textSize="20dp"
+                android:id="@+id/txt16"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_below="@+id/img9"
+                android:text="EEG"
+                android:textStyle="bold"
+                android:textColor="@color/dark"
+                android:gravity="center"
+                />
+            <TextView
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:id="@+id/txt17"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txt16"
+                android:text="Electroencephalography (EEG) is an electrophysiological monitoring method to record electrical activity of the brain. It is typically noninvasive, with the electrodes placed along the scalp, although invasive electrodes are sometimes used such as in electrocorticography"
+                android:textStyle="italic"
+                android:textColor="@color/dark"
+                />
+
+
+
+
+
+            <ImageView
+                android:layout_marginTop="20dp"
+                android:id="@+id/img10"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_below="@+id/txt17"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/circleoutline"
+                />
+
+            <ImageView
+                android:layout_below="@+id/txt17"
+                android:layout_marginTop="35dp"
+                android:id="@+id/imgt9"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_centerHorizontal="true" />
+
+            <TextView
+                android:layout_marginTop="10dp"
+                android:textSize="20dp"
+                android:id="@+id/txt18"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_below="@+id/img10"
+                android:text="CT SCAN"
+                android:textStyle="bold"
+                android:textColor="@color/dark"
+                android:gravity="center"
+                />
+            <TextView
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:id="@+id/txt19"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txt18"
+                android:text="A computerized tomography (CT) scan combines a series of X-ray images taken from different angles and uses computer processing to create cross-sectional images, or slices, of the bones, blood vessels and soft tissues inside your body."
+                android:textStyle="italic"
+                android:textColor="@color/dark"
+                />
+
+
+
+
+            <ImageView
+                android:layout_marginTop="20dp"
+                android:id="@+id/img11"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_below="@+id/txt19"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/circleoutline"
+                />
+
+            <ImageView
+                android:layout_below="@+id/txt19"
+                android:layout_marginTop="35dp"
+                android:id="@+id/imgt10"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_centerHorizontal="true" />
+
+            <TextView
+                android:layout_marginTop="10dp"
+                android:textSize="20dp"
+                android:id="@+id/txt20"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_below="@+id/img11"
+                android:text="OPG"
+                android:textStyle="bold"
+                android:textColor="@color/dark"
+                android:gravity="center"
+                />
+            <TextView
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:id="@+id/txt21"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txt20"
+                android:text="An OPG is a panoramic or wide view x-ray of the lower face, which displays all the teeth of the upper and lower jaw on a single film. It demonstrates the number, position and growth of all the teeth including those that have not yet surfaced or erupted."
+                android:textStyle="italic"
+                android:textColor="@color/dark"
+                />
+
+
+
+
+
+
+
+
+        </RelativeLayout>
+    </ScrollView>
+
+
+</RelativeLayout>

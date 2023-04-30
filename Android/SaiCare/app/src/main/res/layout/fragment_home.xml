@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/temp"
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:text="Loading, please wait..."
+        android:textSize="18dp"
+        android:textColor="@color/dark"
+        android:layout_height="200dp" />
+
+    <com.daimajia.slider.library.SliderLayout
+        android:id="@+id/slider"
+        android:layout_width="match_parent"
+        custom:pager_animation="Accordion"
+        custom:auto_cycle="true"
+        custom:indicator_visibility="visible"
+        custom:pager_animation_span="1100"
+        android:layout_height="200dp" />
+
+
+
+    <RelativeLayout
+        android:layout_below="@+id/slider"
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:padding="20dp"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:layout_centerHorizontal="true"
+            android:id="@+id/img"
+            android:background="@drawable/appointment_icon"
+            android:layout_width="70dp"
+            android:layout_height="70dp" />
+
+        <TextView
+            android:layout_below="@+id/img"
+            android:layout_marginTop="12dp"
+            android:id="@+id/one"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="APPOINTMENT"
+            android:textSize="26dp"
+            android:textColor="@color/dark"/>
+
+        <TextView
+            android:id="@+id/two"
+            android:layout_below="@+id/one"
+            android:layout_marginTop="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/home_info"
+            android:textSize="15dp"
+            android:textColor="@color/dark"/>
+
+        <Button
+            android:layout_marginTop="20dp"
+            android:background="@drawable/book_but"
+            android:id="@+id/book"
+            android:layout_below="@+id/two"
+            android:layout_centerHorizontal="true"
+            android:layout_width="300dp"
+            android:layout_height="40dp"
+            android:text="BOOK APPOINTMENT"
+            android:textSize="18dp"
+            android:textColor="@color/white"/>
+
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

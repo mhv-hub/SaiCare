@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/ic_home"
+            android:title="HOME"/>
+        <item
+            android:id="@+id/nav_docts"
+            android:icon="@drawable/ic_doct"
+            android:title="OUR DOCTORS"/>
+        <item
+            android:id="@+id/nav_appoint"
+            android:icon="@drawable/ic_appoint"
+            android:title="APPOINTMENTS"/>
+        <item
+            android:id="@+id/nav_gal"
+            android:icon="@drawable/ic_gal"
+            android:title="GALLERY"/>
+        <item
+            android:id="@+id/nav_ser"
+            android:icon="@drawable/ic_ser"
+            android:title="SERVICES"/>
+
+        <item
+            android:id="@+id/nav_equip"
+            android:icon="@drawable/ic_equip"
+            android:title="EQUIPMENTS"/>
+
+        <item
+            android:id="@+id/nav_notice"
+            android:icon="@drawable/ic_notice"
+            android:title="NOTICES"/>
+
+        <item
+            android:id="@+id/nav_contact"
+            android:icon="@drawable/ic_contact"
+            android:title="CONTACT US"/>
+        <item
+            android:id="@+id/nav_about"
+            android:icon="@drawable/ic_about"
+            android:title="ABOUT US"/>
+
+    </group>
+
+
+</menu>

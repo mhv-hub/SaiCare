@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context="com.sai.app.saicare.SplashActivity">
+
+    <ImageView
+        android:id="@+id/imgg"
+        android:layout_marginBottom="30dp"
+        android:layout_centerInParent="true"
+        android:background="@drawable/logo"
+        android:layout_width="150dp"
+        android:layout_height="150dp" />
+
+    <ProgressBar
+        android:layout_above="@+id/rrrr"
+        android:id="@+id/loader"
+        android:layout_marginBottom="60dp"
+        android:layout_centerHorizontal="true"
+        android:layout_width="80dp"
+        android:layout_height="80dp" />
+
+    <TextView
+        android:id="@+id/rrrr"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="13dp"
+        android:text="Sai Scan and Diagnostic Centre PVT. LTD."
+        android:textColor="@color/colorPrimaryDark"/>
+
+
+</RelativeLayout>

@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:background="@color/light"
+    tools:context="com.sai.app.saicare.PreviewActivity">
+
+    <RelativeLayout
+        android:background="@color/light"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:background="@color/colorPrimary"
+            android:layout_width="match_parent"
+            android:layout_height="50dp">
+
+
+            <TextView
+                android:layout_marginLeft="10dp"
+                android:gravity="left|center_vertical"
+                android:textColor="@color/white"
+                android:text="Booking Confirmation"
+                android:textSize="18dp"
+                android:textStyle="bold"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent" />
+
+            <ImageButton
+                android:id="@+id/close"
+                android:layout_alignParentRight="true"
+                android:src="@drawable/ic_cancel"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/close_but"
+                android:layout_centerVertical="true"
+                android:layout_width="25dp"
+                android:layout_height="25dp" />
+
+        </RelativeLayout>
+
+
+            <ImageView
+                android:id="@+id/ssss"
+                android:layout_marginTop="75dp"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/circlegreen"
+                android:layout_width="70dp"
+                android:layout_height="70dp" />
+
+            <ImageView
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="85dp"
+                android:background="@drawable/ic_tick"
+                android:layout_width="50dp"
+                android:layout_height="50dp" />
+
+
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_marginTop="160dp"
+            android:padding="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <android.support.v7.widget.CardView
+                android:elevation="40dp"
+                card_view:cardCornerRadius="20dp"
+                card_view:cardBackgroundColor="@color/white"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ScrollView
+                    android:paddingTop="10dp"
+                    android:scrollbars="none"
+                    android:overScrollMode="never"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+
+                        <TextView
+                            android:id="@+id/date"
+                            android:textColor="@color/colorPrimary"
+                            android:textSize="20dp"
+                            android:gravity="center"
+                            android:text="13/05/2018 ~ 03:40 PM"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" />
+
+
+                        <RelativeLayout
+                            android:background="@color/light"
+                            android:id="@+id/re1"
+                            android:layout_below="@+id/date"
+                            android:layout_marginTop="10dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="5dp">
+                        </RelativeLayout>
+
+
+                        <TextView
+                            android:layout_below="@+id/re1"
+                            android:layout_marginTop="10dp"
+                            android:id="@+id/name"
+                            android:textSize="20dp"
+                            android:text="MAHAVIR OJHA"
+                            android:textColor="@color/dark"
+                            android:gravity="center"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" />
+
+                        <TextView
+                            android:id="@+id/age"
+                            android:layout_marginTop="5dp"
+                            android:layout_below="@id/name"
+                            android:textSize="15dp"
+                            android:text="( AGE : 21 )"
+                            android:textColor="@color/dark"
+                            android:textStyle="bold"
+                            android:gravity="center"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" />
+
+
+
+
+
+
+
+                        <TextView
+                            android:id="@+id/tttt"
+                            android:layout_marginLeft="20dp"
+                            android:layout_below="@id/age"
+                            android:layout_marginTop="10dp"
+                            android:text="PATIENT DETAILS"
+                            android:textSize="15dp"
+                            android:textColor="@color/colorPrimary"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" />
+
+                        <RelativeLayout
+                            android:id="@+id/re3"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginRight="20dp"
+                            android:layout_marginTop="5dp"
+                            android:layout_below="@+id/tttt"
+                            android:background="@color/dark"
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp">
+
+                        </RelativeLayout>
+
+                        <TextView
+                            android:id="@+id/gender"
+                            android:textColor="@color/dark"
+                            android:textSize="15dp"
+
+                            android:text="Gender : MALE"
+                            android:gravity="left"
+                            android:layout_marginTop="20dp"
+                            android:layout_marginLeft="20dp"
+                            android:layout_below="@+id/re3"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" />
+
+                        <TextView
+                            android:id="@+id/email"
+                            android:textColor="@color/dark"
+                            android:gravity="left"
+                            android:textSize="15dp"
+                            android:text="Email : mahavir.cse130@gmail.com"
+                            android:layout_marginTop="5dp"
+                            android:layout_below="@+id/gender"
+                            android:layout_marginLeft="20dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" />
+
+                        <TextView
+                            android:id="@+id/mobile"
+                            android:textColor="@color/dark"
+                            android:textSize="15dp"
+                            android:gravity="left"
+                            android:text="Phone : 9934127414"
+                            android:layout_marginTop="5dp"
+                            android:layout_below="@+id/email"
+                            android:layout_marginLeft="20dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" />
+
+                        <TextView
+                            android:id="@+id/reffered"
+                            android:textColor="@color/dark"
+                            android:textSize="15dp"
+                            android:gravity="left"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginLeft="20dp"
+                            android:layout_below="@+id/mobile"
+                            android:text="Reffered by : Dr Shraddha Kapoor"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" />
+
+                        <TextView
+                            android:id="@+id/ttt"
+                            android:layout_marginLeft="20dp"
+                            android:layout_below="@id/reffered"
+                            android:layout_marginTop="15dp"
+                            android:text="SERVICES BOOKED"
+                            android:textSize="15dp"
+                            android:textColor="@color/colorPrimary"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" />
+
+                        <RelativeLayout
+                            android:id="@+id/re2"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginRight="20dp"
+                            android:layout_marginTop="5dp"
+                            android:layout_below="@+id/ttt"
+                            android:background="@color/dark"
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp">
+
+                        </RelativeLayout>
+
+
+
+                        <TextView
+                            android:id="@+id/services"
+                            android:textColor="@color/dark"
+                            android:textSize="15dp"
+                            android:gravity="left"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginTop="10dp"
+                            android:text="CT SCAN\nULTRASOUND"
+                            android:layout_below="@+id/re2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" />
+
+
+                    </RelativeLayout>
+
+                </ScrollView>
+
+            </android.support.v7.widget.CardView>
+
+        </RelativeLayout>
+
+
+
+
+
+    </RelativeLayout>
+

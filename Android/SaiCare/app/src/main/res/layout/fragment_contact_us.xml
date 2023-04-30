@@ -1,0 +1,220 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:background="@color/light"
+    tools:context="com.sai.app.saicare.ContactUsFragment">
+
+
+    <RelativeLayout
+        android:id="@+id/top"
+        android:background="@drawable/semi_circle"
+        android:layout_width="match_parent"
+        android:layout_height="70dp">
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/cir"
+        android:background="@drawable/circle"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:layout_width="100dp"
+        android:layout_height="100dp">
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="35dp"
+        android:id="@+id/c2"
+        android:background="@drawable/circle2"
+        android:layout_width="70dp"
+        android:layout_height="70dp">
+
+        <ImageView
+            android:layout_centerInParent="true"
+            android:background="@drawable/ic_contact_us"
+            android:layout_width="40dp"
+            android:layout_height="40dp" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="60dp"
+        android:padding="10dp"
+        android:layout_below="@+id/top"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/txt"
+            android:layout_marginTop="10dp"
+            android:text="TELL US HOW CAN WE HELP YOU !!"
+            android:textSize="17dp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:textColor="@color/dark"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <android.support.v7.widget.CardView
+            android:gravity="center"
+            android:layout_margin="10dp"
+            card_view:cardCornerRadius="20dp"
+            card_view:cardBackgroundColor="@color/white"
+            android:elevation="40dp"
+            android:id="@+id/form"
+            android:layout_below="@+id/txt"
+            android:layout_marginTop="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ScrollView
+                android:scrollbars="none"
+                android:overScrollMode="never"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <RelativeLayout
+                    android:padding="20dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <android.support.design.widget.TextInputLayout
+                        android:id="@+id/name"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <EditText
+                            android:inputType="textPersonName"
+                            android:singleLine="true"
+                            android:textColorHint="@color/dark"
+                            android:textSize="15dp"
+                            android:textColor="@color/colorPrimary"
+                            android:id="@+id/input_name"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="Name" />
+
+                    </android.support.design.widget.TextInputLayout>
+
+                    <android.support.design.widget.TextInputLayout
+                        android:id="@+id/email"
+                        android:layout_below="@+id/name"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <EditText
+                            android:inputType="textEmailAddress"
+                            android:singleLine="true"
+                            android:textColorHint="@color/dark"
+                            android:textSize="15dp"
+                            android:textColor="@color/colorPrimary"
+                            android:id="@+id/input_email"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="Email ID" />
+
+                    </android.support.design.widget.TextInputLayout>
+
+                    <android.support.design.widget.TextInputLayout
+                        android:id="@+id/mobile"
+                        android:layout_below="@+id/email"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <EditText
+                            android:inputType="phone"
+                            android:singleLine="true"
+                            android:textColorHint="@color/dark"
+                            android:textSize="15dp"
+                            android:textColor="@color/colorPrimary"
+                            android:id="@+id/input_mobile"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="Contact No." />
+
+                    </android.support.design.widget.TextInputLayout>
+
+                    <RelativeLayout
+                        android:layout_marginTop="10dp"
+                        android:id="@+id/radio"
+                        android:layout_below="@+id/mobile"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <RadioGroup
+                            android:orientation="horizontal"
+                            android:id="@+id/radioGroup"
+                            android:layout_width="match_parent"
+                            android:layout_height="30dp">
+
+                            <RadioButton
+                                android:textColor="@color/dark"
+                                android:id="@+id/query"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Query"
+                                android:textSize="15dp"/>
+
+                            <RadioButton
+                                android:textColor="@color/dark"
+                                android:layout_marginLeft="30dp"
+                                android:id="@+id/feedback"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Feedback"
+                                android:textSize="15dp"/>
+
+                        </RadioGroup>
+
+
+                    </RelativeLayout>
+
+                    <android.support.design.widget.TextInputLayout
+                        android:id="@+id/message"
+                        android:layout_marginTop="10dp"
+                        android:layout_below="@+id/radio"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <EditText
+                            android:inputType="textMultiLine"
+                            android:minLines="1"
+                            android:singleLine="true"
+                            android:textColorHint="@color/dark"
+                            android:textSize="15dp"
+                            android:textColor="@color/colorPrimary"
+                            android:id="@+id/input_message"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="Enter your query" />
+
+                    </android.support.design.widget.TextInputLayout>
+
+                </RelativeLayout>
+
+            </ScrollView>
+
+
+        </android.support.v7.widget.CardView>
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/submit"
+        android:text="SUBMIT"
+        android:textColor="@color/white"
+        android:textSize="18dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="20dp"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/submit_button"
+        android:layout_width="200dp"
+        android:layout_height="40dp" />
+
+
+
+</RelativeLayout>
