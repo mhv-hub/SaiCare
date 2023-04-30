@@ -1,0 +1,58 @@
+<?php
+    require 'connect.php';
+    
+    $flage=0;
+	$home=array();
+	$sql = "select image from slider where active=0;";
+	$res = mysqli_query($con,$sql);
+    while($row = mysqli_fetch_array($res)){
+            array_push($home,array("name"=>$row[0]));
+            $flage++;
+        }
+    if($flage==0){
+        array_push($home,array("name"=>"null"));
+    }
+	$flage=0;
+	$gallery=array();
+	$sql = "select img_name from galary where status=0;";
+	$res = mysqli_query($con,$sql);
+    while($row = mysqli_fetch_array($res)){
+            array_push($gallery,array("name"=>$row[0]));
+            $flage++;
+        }
+    if($flage==0){
+        array_push($gallery,array("name"=>"null"));
+    }
+	$flage=0;
+	$doctors=array();
+	$sql = "select * from doctor_details where active=1;";
+	$res = mysqli_query($con,$sql);
+    while($row = mysqli_fetch_array($res)){
+            array_push($doctors,array("dr_name"=>$row[1],"name"=>$row[2],"quali"=>$row[3],"desg"=>$row[4]));
+            $flage++;
+        }
+    if($flage==0){
+        array_push($doctors,array("name"=>"null"));
+    }
+	
+	$flage=0;
+	$equipments=array();
+	$sql = "select * from equipments where active=1;";
+	$res = mysqli_query($con,$sql);
+    while($row = mysqli_fetch_array($res)){
+            array_push($equipments,array("details"=>$row[1],"name"=>$row[2]));
+            $flage++;
+        }
+    if($flage==0){
+        array_push($equipments,array("name"=>"null"));
+    }
+    
+    $update = array();
+    $sql = "select * from updateapp ORDER BY id DESC LIMIT 1;";
+	$res = mysqli_query($con,$sql);
+	$row = mysqli_fetch_array($res);
+    array_push($update,array("key"=>$row[0]));
+    
+	echo json_encode(array("home"=>$home,"gallery"=>$gallery,"doctors"=>$doctors,"equipments"=>$equipments,"update"=>$update));
+    mysqli_close($con);
+?>

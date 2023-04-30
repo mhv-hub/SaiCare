@@ -1,0 +1,46 @@
+<?php
+    require 'connect.php';
+    $mobile = $_POST['mobile'];
+    $pname = $_POST['pname'];
+    $gender = $_POST['gender'];
+    $age = $_POST['age'];
+    $email = $_POST['email'];
+    $rby = $_POST['rby'];
+    $address = $_POST['address'];
+    $services = $_POST['services'];
+    $slot = $_POST['slot'];
+    $doa = $_POST['doa'];
+    $st = 1;
+    $slotarr = $_POST['slotarr'];
+    $slot_ind = $_POST['slot_ind'];
+    
+   
+    
+    if($rby==null)
+        $reffer = 'self';
+    else
+        $reffer = 'doctor';
+        
+ 
+    
+    $sql = "select * from booking where date='$doa';";
+    $res = mysqli_query($con,$sql);
+    $row = mysqli_fetch_array($res);
+    $slots = $row[1];
+    if($slots[$slot]=='1')
+        $st=0;
+    else
+    {
+        $sql = "INSERT INTO appointment_details values(NULL,'$pname','$email','$age','$mobile','$gender','$reffer','$rby','$address','$doa','$slot','$services');";
+        $res=mysqli_query($con,$sql);
+        if(!$res)
+            echo 'error';
+        $sql = "update booking set slot_booked='$slotarr' where date='$doa'";
+        mysqli_query($con,$sql);
+    }
+    
+    $response = array();
+    array_push($response,array("status"=>$st));
+    echo json_encode(array("server_response"=>$response));
+    mysqli_close($con);
+?>

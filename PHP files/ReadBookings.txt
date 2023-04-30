@@ -1,0 +1,96 @@
+<?php
+    require 'connect.php';
+    $datearr = array();
+    $dayarr = array();
+    
+    date_default_timezone_set('Asia/Kolkata');
+    $dt = date('m/d/Y');
+    $hour =  date('G');
+    $min = date('i');
+    
+    if($hour>18){
+        $datetime = new DateTime($dt);
+		$datetime->modify('+1 day');
+		$datearr[0] = $datetime->format('m/d/Y');
+    }
+    else
+        $datearr[0] = $dt;
+    
+    $timestamp2 = strtotime($datearr[0]);
+    $dayy2 = date("l", $timestamp2);
+    $dayarr[0] = $dayy2;
+    
+    $sql = "select * from booking where date='$datearr[0]';";
+    $res = mysqli_query($con,$sql);
+    if(!$res)
+        $num = 0;
+    else
+        $num = mysqli_num_rows($res);
+    if($num==0){
+        if($dayy2 == "Sunday")
+            $sql = "insert into booking values(null,'$datearr[0]','0000000000111111');";
+        else
+            $sql = "insert into booking values(null,'$datearr[0]','0000000000000000');";
+            
+        mysqli_query($con,$sql);    
+    }
+    $dt = $datearr[0];
+    for($i=1;$i<=9;$i++){
+        
+        $datetime = new DateTime($dt);
+		$datetime->modify('+1 day');
+		$datearr[$i] = $datetime->format('m/d/Y');
+		
+		$timestamp = strtotime($datetime->format('m/d/Y'));
+		$dayy = date("l", $timestamp);
+		$dayarr[$i] = $dayy;
+		
+		$sql = "select * from booking where date='$datearr[$i]';";
+        $res = mysqli_query($con,$sql);
+        if(!$res)
+            $num = 0;
+        else
+            $num = mysqli_num_rows($res);
+        if($num==0){
+            if($dayy == "Sunday")
+                $sql = "insert into booking values(null,'$datearr[$i]','0000000000111111');";
+            else
+                $sql = "insert into booking values(null,'$datearr[$i]','0000000000000000');";
+                
+            mysqli_query($con,$sql);    
+        }
+		
+		$dt = $datetime->format('m/d/Y');
+        
+    }
+    
+    $bookings  = array();
+	$timeslot = array();
+	$facilities = array();
+	
+    $i=0;
+    while($i<=9)
+    {
+        $sql = "select * from booking where date='$datearr[$i]';";
+        $res = mysqli_query($con,$sql);
+        
+            $row = mysqli_fetch_array($res);
+            array_push($bookings,array("date"=>$row[1],"slots"=>$row[2],"hour"=>$hour,"min"=>$min));
+       
+        $i++;
+    }
+	
+	$sql = "select * from time_slot;";
+	$res = mysqli_query($con,$sql);
+	while($row = mysqli_fetch_array($res))
+	{
+		array_push($timeslot,array("timeslot"=>$row[1]));	
+	}
+	
+	
+	
+    echo json_encode(array("bookings"=>$bookings));
+	echo json_encode(array("timeslot"=>$timeslots));
+    mysqli_close($con);
+
+?>

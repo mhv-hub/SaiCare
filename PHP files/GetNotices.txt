@@ -1,0 +1,15 @@
+<?php
+    require 'connect.php';
+    $sql = "select information from notice";
+    $res = mysqli_query($con,$sql);
+    $flage=0;
+    $response = array();
+        while($row = mysqli_fetch_array($res)){
+            array_push($response,array("notice"=>$row[0]));
+            $flage++;
+        }
+    if($flage==0)
+        array_push($response,array("notice"=>"failed"));
+    echo json_encode(array("server_response"=>$response));
+    mysqli_close($con);
+?>
